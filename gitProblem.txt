@@ -1,0 +1,224 @@
+
+$ mkdir pavan1
+
+$ ls
+ Discord.lnk*  'Opera browser.lnk'*   californium/   pavan.txt
+ JioTV.lnk*     Zoom.lnk*             desktop.ini    pavan1/
+
+$ cd pavan1
+$ ls
+$ git clone https://github.com/sabihak89/californium.git
+
+$ git clone https://github.com/sabihak89/californium.git
+$ git clone https://github.com/sabihak89/californium.git
+
+$ cd californium
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/dummy
+  remotes/origin/main
+  remotes/origin/session/git
+  remotes/origin/thirdbranch
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (main)
+$ git checkout session/git
+Switched to a new branch 'session/git'
+branch 'session/git' set up to track 'origin/session/git'.
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ ls
+README.md  intro.txt  result.txt
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ touch profile.txt
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ cat > pro
+
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ cat > profile.txt
+hello world , i am pavan
+
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git status
+On branch session/git
+Your branch is up to date with 'origin/session/git'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pro
+        profile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=patilpavan786
+user.password=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
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/sabihak89/californium.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+branch.session/git.remote=origin
+branch.session/git.merge=refs/heads/session/git
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git add profile.txt
+warning: in the working copy of 'profile.txt', LF will be replaced by CRLF the next time Git touches it
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git commit -m "ok tested"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@DESKTOP-MNMTBBG.(none)')
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git config --global user.email "pavan.p.b.pavan@gmail.com"
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=patilpavan786
+user.password=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
+user.email=pavan.p.b.pavan@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/sabihak89/californium.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+branch.session/git.remote=origin
+branch.session/git.merge=refs/heads/session/git
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git add profle.txt
+fatal: pathspec 'profle.txt' did not match any files
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git status
+On branch session/git
+Your branch is up to date with 'origin/session/git'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   profile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pro
+
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git status
+On branch session/git
+Your branch is up to date with 'origin/session/git'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   profile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pro
+
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git push https://github.com/patilpavan786/californium.project1.git
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'session/git' on GitHub by visiting:
+remote:      https://github.com/patilpavan786/californium.project1/pull/new/session/git
+remote:
+To https://github.com/patilpavan786/californium.project1.git
+ * [new branch]      session/git -> session/git
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git satus
+git: 'satus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git status
+On branch session/git
+Your branch is up to date with 'origin/session/git'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   profile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pro
+
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git commit -m "checked"
+[session/git 69c16b5] checked
+ 1 file changed, 1 insertion(+)
+ create mode 100644 profile.txt
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$ git push https://github.com/patilpavan786/californium.project1.git
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 364 bytes | 182.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/patilpavan786/californium.project1.git
+   beef319..69c16b5  session/git -> session/git
+
+Admin@DESKTOP-MNMTBBG MINGW64 ~/desktop/pavan1/californium (session/git)
+$
